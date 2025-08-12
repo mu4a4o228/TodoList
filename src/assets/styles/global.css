@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: Akzidenz-Grotesk Pro;
+    src: url(./assets/akzidenzgroteskpro_regular.ttf) format("truetype");
+  }
+
+body {
+    background-color: rgb(99, 99, 255);
+      /* padding: 0;
+    margin: 0; */
+    font-family: "Akzidenz-Grotesk Pro";
+}
