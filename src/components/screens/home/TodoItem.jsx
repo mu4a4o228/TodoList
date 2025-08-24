@@ -32,16 +32,16 @@ const TodoItem = ({todo, changeTodo, removeTodo, updateTodo}) => {
         <button className={styles.backBroder} onClick = {() => !isEditing && changeTodo(todo._id) }>
          <CheckBox isCompleted={todo.isCompleted} />
            {isEditing ? (
-          <input
+          <textarea
             autoFocus
             className={styles.editInput}
             value={editValue}
             onChange={e => setEditValue(e.target.value)}
             onBlur={handleEdit}
-            onKeyDown={handleKeyDown}
-          />
+            onKeyDown={handleKeyDown}>
+          </textarea>
         ) : (
-          <span style={{ textDecoration: todo.isCompleted ? 'line-through' : '' }}>
+          <span style={{ textDecoration: todo.isCompleted ? 'line-through' : '', marginLeft: 30 }}>
             {todo.title}
           </span>
         )}

@@ -14,7 +14,7 @@ function App() {
   
   {
     _id: 'asdasw',
-    title: "Задание на день...1",
+    title: "Задаааааааааааааааааааааааааааааание на день...1",
     isCompleted: false,
   },
 
@@ -58,7 +58,7 @@ function App() {
       updateTodo ={updateTodo}/> 
       ))} 
       <CreateTodoField 
-      
+      todos={todos}
       setTodos = {setTodos}/>
       </div> 
     

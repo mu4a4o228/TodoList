@@ -46,6 +46,7 @@
     border-color: rgb(255, 126, 147); 
     height: 14px;
     width: 14px;
+    
 }
 
 .Border:active {
@@ -57,7 +58,8 @@
   padding: 70px;
   padding-bottom: 400px;
   width: 100%;
- 
+  position: relative;
+  margin-top: 200px;
 }
 
 .flex {
@@ -68,11 +70,11 @@
     background-color: rgb(213, 240, 255);
     border-radius: 5px;
     border: none;
-     height: 50px;
-     width: 100%;
+    height: 50px;
+    width: 100%;
     cursor: pointer;
     justify-content: space-between;
-    
+     
 }
 
 .backBroder{
@@ -81,7 +83,13 @@
     display: flex;
     align-items: center;
     cursor: pointer;
-    
+    word-wrap: break-word;
+    width: 100%;
+    resize: both;
+    overflow: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    resize: none;
 }
 
 .ContaineraddNewTodo{
@@ -91,17 +99,26 @@
     background-color: rgb(213, 240, 255);
     border-radius: 5px;
      height: 40px;
-     width: 100%;
+     width: 85%;
     cursor: pointer;
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+     resize: none;
 }
 
 .addNewTodo{
     border: none;
     background-color: transparent;
-    width: 90%;
+    width: 70%;
     height: 90%;
     outline: none;
+    text-align: center;
+    text-align: left;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    resize: none;
 }
 .clear{
     transition:color 300ms ease-in-out;
@@ -163,4 +180,34 @@ color: rgba(114, 116, 55, 0.986);
     width: 90%;
     height: 90%;
     outline: none;
+    resize: none;
+}
+
+@media (min-width: 320px) {
+    .headerH {
+        width: 100%;
+    }
+
+    .lessons {
+        padding: 0;
+        width: 90%;
+        height: 80%;
+        padding-top: 70px;
+    }
+
+    .ContaineraddNewTodo{
+        width: 100%;
+    }
+    
+    .addNewTodo {
+        width: 100%;
+        word-wrap: break-word;
+        height: 100%;
+    }
+
+    .Border {
+        margin-right: 20px;
+        position: absolute;
+    }
+
 }
